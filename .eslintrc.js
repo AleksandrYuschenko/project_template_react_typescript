@@ -1,22 +1,12 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true
-  },
-  extends: [
-    'plugin:react/recommended',
-    'standard-with-typescript'
-  ],
-  overrides: [
-  ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['tsconfig.json']
-  },
-  plugins: [
-    'react'
-  ],
+  extends: ['@mate-academy/eslint-config-react-typescript'],
   rules: {
-  }
-}
+    'max-len': ['error', {
+      ignoreTemplateLiterals: true,
+      ignoreComments: true,
+    }],
+    'jsx-a11y/label-has-associated-control': ["error", {
+      assert: "either",
+    }],
+  },
+};
