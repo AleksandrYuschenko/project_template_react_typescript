@@ -2,7 +2,6 @@
   "name": "project_template_react_typescript",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aleksandryuschenko.github.io/project_template_react_typescript",
   "dependencies": {
     "@mate-academy/cypress-tools": "^1.0.4",
     "@mate-academy/eslint-config-react-typescript": "^1.0.11",
